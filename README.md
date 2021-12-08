@@ -18,13 +18,13 @@
 
 ### POST `/users`
 A rota deve receber `name`, `userName` e `email` dentro do corpo da requisição para que seja possível cadastrar um usuário.
-``json
+```json
 {
   name: string,
   userName: string,
   email: string
 }
-``
+```
 Em caso de sucesso a rota retorna o status `201` e o usuário cadastrado. Em caso de erro retorna o status `400` e uma mensagem de erro.
 ```json
 {
