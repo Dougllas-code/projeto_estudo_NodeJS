@@ -10,8 +10,6 @@
 
 **.** O comando `yarn dev` executa o script que vai inicializar o servidor.
 
-**.** O comando `prisma migrate dev` vai executar a migration do banco, criando a tabela `user`.
-
 **.** O banco utilizado foi o SQLite. 
 
 ## Rotas da aplicação
