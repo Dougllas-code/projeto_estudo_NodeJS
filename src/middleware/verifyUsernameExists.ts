@@ -13,10 +13,8 @@ export async function verifyUsernameExists(request: Request, response: Response,
   try {
     if(!user){
       request.body.userName = userName
-
       return next()
     }
-    
     return response.status(401).json({error: "Username já está em uso"})
 
   } catch (error) {

@@ -7,9 +7,13 @@ class DeleteUserController {
 
     const service = new DeleteUserService()
 
-    const result = await service.execute(id)
+    try {
+      const result = await service.execute(id)
+      return response.status(200).json(result)
 
-    return response.json(result)
+    } catch (err) {
+      return response.status(400).json({ error: err.message })
+    }
   }
 }
 

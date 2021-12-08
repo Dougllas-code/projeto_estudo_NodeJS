@@ -14,8 +14,6 @@ export async function verifyUserExists(request: Request, response: Response, nex
     if(!user){
       return response.status(404).json({error: "Usuário não existe"})
     }
-    
-    request.body = user
     return next()
 
   } catch (error) {

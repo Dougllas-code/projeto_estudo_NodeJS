@@ -6,6 +6,7 @@ class ListUsersService {
 
     try {
       return users
+
     } catch (error) {
       throw new Error('Erro ao listar usuários')
     }

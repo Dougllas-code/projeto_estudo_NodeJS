@@ -13,6 +13,7 @@ class CreateUserService {
 
     try {
       return user
+      
     } catch (error) {
       throw new Error("Erro ao cadastrar usuario")
     }
