@@ -1,6 +1,6 @@
 # Projeto de Estudo Node
 
- ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white) ![](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![](	https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) ![](https://img.shields.io/badge/prisma-1B222D?style=for-the-badge&logo=prisma&logoColor=white)
+ ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![](https://img.shields.io/badge/Yarn-2C8EBB?style=for-the-badge&logo=yarn&logoColor=white) ![](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white) ![](	https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white) ![](https://img.shields.io/badge/prisma-1B222D?style=for-the-badge&logo=prisma&logoColor=white) ![](https://img.shields.io/badge/Insomnia-5849be?style=for-the-badge&logo=Insomnia&logoColor=white) ![](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 
 ## 💻 Sobre o Projeto
 
@@ -9,8 +9,6 @@
 **.** Para testar essa aplicação basta fazer o clone do repositório; após isso no terminal da o comando `yarn` para que todas as dependências sejam instalas.
 
 **.** O comando `yarn dev` executa o script que vai inicializar o servidor.
-
-**.** O comando `prisma migrate dev` vai executar a migration do banco, criando a tabela `user`.
 
 **.** O banco utilizado foi o SQLite. 
 
