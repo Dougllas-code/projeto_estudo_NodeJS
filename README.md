@@ -87,7 +87,7 @@ Em caso de sucesso a rota retorna o status `200`, o `name` e o `userName` do usu
 Em caso de erro retorna o status `400` e uma mensagem de erro.
    
 ### Imagem `POST`
-![](img/POST.png)
+![](img/post.png)
 ### Imagem `GET`
 ![](img/GET.png)
 ### Imagem `PUT`
