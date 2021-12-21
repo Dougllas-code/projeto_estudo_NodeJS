@@ -1,14 +1,15 @@
 import { Request, Response } from "express";
-import { DeleteUserService } from "../../services/user/DeleteUserService";
+import { DeleteUserService } from "./DeleteUserService";
 
 class DeleteUserController {
+
+  constructor(private deleteUserService: DeleteUserService) { }
+
   async handle(request: Request, response: Response) {
     const { id } = request.params
 
-    const service = new DeleteUserService()
-
     try {
-      const result = await service.execute(id)
+      const result = await this.deleteUserService.execute(id)
       return response.status(200).json(result)
 
     } catch (err) {
