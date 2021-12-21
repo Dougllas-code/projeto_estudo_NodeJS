@@ -1,15 +1,16 @@
 import { Request, Response } from "express";
-import { UpdateUserService } from "../../services/user/UpdateUserService";
+import { UpdateUserService } from "./UpdateUserService";
 
 class UpdateUserController {
+
+  constructor(private updateUserService: UpdateUserService) { }
+
   async handle(request: Request, response: Response) {
     const { id } = request.params
     const { name, email } = request.body
 
-    const service = new UpdateUserService()
-
     try {
-      const result = await service.execute(id, name, email)
+      const result = await this.updateUserService.execute(id, name, email)
       return response.status(200).json(result)
 
     } catch (err) {

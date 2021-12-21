@@ -1,16 +1,26 @@
 import { Router } from 'express'
-import { CreateUserController } from '../controller/user/CreateUserController'
-import { DeleteUserController } from '../controller/user/DeleteUserController'
-import { ListUsersController } from '../controller/user/ListUsersController'
-import { UpdateUserController } from '../controller/user/UpdateUserController'
 import { verifyUserExists } from '../middleware/verifyUserExists'
 import { verifyUsernameExists } from '../middleware/verifyUsernameExists'
+import { createUserController } from '../services/user/createUser'
+import { deleteUserController } from '../services/user/deleteUser'
+import { listUsersController } from '../services/user/listUser'
+import { updateUserController } from '../services/user/updateUser'
 
 const router = Router()
 
-router.post('/user', verifyUsernameExists, new CreateUserController().handle)
-router.get('/user', new ListUsersController().handle)
-router.delete('/user/:id', verifyUserExists, new DeleteUserController().handle)
-router.put('/user/:id', verifyUserExists, new UpdateUserController().handle)
+router.post('/user', verifyUsernameExists, (request, response) => {
+  return createUserController.handle(request, response)
+})
+router.get('/user', (request, response) => {
+  return listUsersController.handle(request, response)
+})
+
+router.delete('/user/:id', verifyUserExists, (request, response) => {
+  return deleteUserController.handle(request, response)
+})
+
+router.put('/user/:id', verifyUserExists, (request, response) => {
+  return updateUserController.handle(request, response)
+})
 
 export { router }
