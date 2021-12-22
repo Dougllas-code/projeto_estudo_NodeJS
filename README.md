@@ -80,10 +80,10 @@ Em caso de sucesso a rota retorna o status `200`, o usuário excluido.
 
 ```
 {
-	"id": "fdc074de-cd0c-4e7d-8e3b-f2eea418f112",
-	"name": "Jon Doe",
-	"userName": "litleJon",
-	"email": "jondoe@example.com"
+  "id": "fdc074de-cd0c-4e7d-8e3b-f2eea418f112",
+  "name": "Jon Doe",
+  "userName": "litleJon",
+  "email": "jondoe@example.com"
 }
 ```
 Em caso de erro retorna o status `400` e uma mensagem de erro.
