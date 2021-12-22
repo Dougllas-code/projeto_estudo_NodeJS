@@ -76,12 +76,14 @@ Em caso de erro retorna o status `400` e uma mensagem de erro.
 
 ### DELETE `/users/:id`
 A rota deve receber, nos parâmetros da rota, o `id` de um usuário que vai ser excluido.
-Em caso de sucesso a rota retorna o status `200`, o `name` e o `userName` do usuário excluido.
+Em caso de sucesso a rota retorna o status `200`, o usuário excluido.
 
 ```
 {
-  name: "Dougllas S. Souza",
-  userName: "DOUG"
+	"id": "fdc074de-cd0c-4e7d-8e3b-f2eea418f112",
+	"name": "Jon Doe",
+	"userName": "litleJon",
+	"email": "jondoe@example.com"
 }
 ```
 Em caso de erro retorna o status `400` e uma mensagem de erro.
